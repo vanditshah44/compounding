@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "compounding_backend": {
+      "main": "src/compounding_backend/main.mo",
+      "type": "motoko"
+    },
+    "compounding_frontend": {
+      "dependencies": [
+        "compounding_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/compounding_frontend/src/index.html"
+      },
+      "source": [
+        "src/compounding_frontend/assets",
+        "dist/compounding_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
